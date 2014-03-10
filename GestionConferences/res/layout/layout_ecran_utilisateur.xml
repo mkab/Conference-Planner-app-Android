@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc" >
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/boutonModeAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="affichageAdmin"
+                android:text="Mode Admin" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#0099cc" >
+
+        <LinearLayout
+            android:id="@+id/linearBouton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearBouton1"
+                android:layout_width="fill_parent"
+                android:layout_height="172dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/boutonCalendrier"
+                    android:layout_width="132dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Calendrier" />
+
+                <Button
+                    android:id="@+id/boutonMesConferences"
+                    android:layout_width="132dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Mes Conférences" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBouton2"
+                android:layout_width="fill_parent"
+                android:layout_height="172dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/boutonOptions"
+                    android:layout_width="132dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Options" />
+
+                <Button
+                    android:id="@+id/boutonConferenceProche"
+                    android:layout_width="132dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Conférence à proximité" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

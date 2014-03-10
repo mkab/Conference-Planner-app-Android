@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#0099cc" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textViewProgramme"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Programme"
+                android:textColor="#FF1700"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextProgramme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099ff"
+            android:ems="10" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Auteur"
+                android:textColor="#FF1700"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextAuteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099ff"
+            android:ems="10" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Lieu"
+                android:textColor="#FF1700"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextLieu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0099ff"
+            android:ems="10" >
+        </EditText>
+
+        <DatePicker
+            android:id="@+id/datePickerPresentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="Début"
+            android:textColor="#FF1700"
+            android:textSize="20dp" />
+
+        <TimePicker
+            android:id="@+id/timePickerDebutPresentation"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="Fin"
+            android:textColor="#FF1700"
+            android:textSize="20dp" />
+
+        <TimePicker
+            android:id="@+id/timePickerFinPresentation"
+            android:layout_width="wrap_content"
+            android:layout_height="145dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/boutonValiderPresentation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Valider" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
