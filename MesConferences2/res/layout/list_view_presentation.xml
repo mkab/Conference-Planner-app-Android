@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CFCFCF" >
+
+    <TextView
+        android:id="@+id/tvMesconf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF7F24"
+        android:gravity="center_horizontal"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvConfDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
