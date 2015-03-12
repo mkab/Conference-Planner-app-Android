@@ -1,5 +1,8 @@
 PSTL-Andriod
 ============
+Android project at Pierre Marie Curie University
+A mobile application for managing conferences using Android and FeatureIDE (an Eclipse plugin for software product line development).
+
 
 Projet STL Sémestre 2
 
